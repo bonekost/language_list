@@ -6,6 +6,7 @@ module LanguageList
 
     def initialize(options)
       @name = options[:name]
+      @emoji_flag = options[:emoji_flag]
       @native_name = options[:native_name]
       @common_name = options[:common_name]
       @iso_639_3 = options[:iso_639_3]
