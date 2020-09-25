@@ -2,10 +2,11 @@ require 'yaml'
 
 module LanguageList
   class LanguageInfo
-    attr_reader :name, :iso_639_3, :iso_639_1, :iso_639_2b, :iso_639_2t, :type
+    attr_reader :name, :emoji_flag, :iso_639_3, :iso_639_1, :iso_639_2b, :iso_639_2t, :type
 
     def initialize(options)
       @name = options[:name]
+      @native_name = options[:native_name]
       @common_name = options[:common_name]
       @iso_639_3 = options[:iso_639_3]
       @iso_639_1 = options[:iso_639_1]
@@ -13,6 +14,10 @@ module LanguageList
       @iso_639_2t = options[:iso_639_2t]
       @common = options[:common]
       @type = options[:type]
+    end
+
+    def native_name
+      @native_name || @name
     end
 
     def common_name
