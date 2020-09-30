@@ -12,8 +12,6 @@ Gem::Specification.new do |s|
   s.summary     = %q{A list of languages and methods to find and work with these languages.}
   s.description = %q{A list of languages based upon ISO-639-1 and ISO-639-3 with functions to retrieve only common languages.}
 
-  s.rubyforge_project = "language_list"
-
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
