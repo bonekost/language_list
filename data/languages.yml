@@ -46895,7 +46895,7 @@
   :iso_639_3: nno
   :iso_639_2b: nno
   :iso_639_2t: nno
-  :common: false
+  :common: true
   :type: :living
   :scope: :individual
   :native_name: Norsk nynorsk
